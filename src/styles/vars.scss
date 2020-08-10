@@ -1,0 +1,25 @@
+// COLORS
+$colorTitle: #141419;
+$colorText:  #616161;
+$colorMarker:  #fb973b;
+
+// TYPOGRAPHICAL
+@mixin title {
+  font-weight: 700;
+  color: $colorTitle;
+}
+
+@mixin text {
+  font-weight: 400;
+  color: $colorText;
+}
+
+@mixin marker {
+  font-weight: 700;
+  color: $colorMarker;
+}
+
+@mixin button {
+  font-family: "ButtonFonts", sans-serif;
+  font-weight: 500;
+}

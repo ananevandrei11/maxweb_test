@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "ButtonFonts";
+  src: url("./fotns/buttonfonts.otf");
+}
+@import "./styles/vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  @include text;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @include title;
+}
+
+span {
+  @include marker;
+}
+
+button {
+  @include button;
+}
+
