@@ -2,10 +2,13 @@
 $colorTitle: #141419;
 $colorText:  #616161;
 $colorMarker:  #fb973b;
+$colorBorder: #fcba7c;
 
 // TYPOGRAPHICAL
 @mixin title {
+  font-size: 3.75rem;
   font-weight: 700;
+  line-height: 4.5rem;
   color: $colorTitle;
 }
 
@@ -15,6 +18,7 @@ $colorMarker:  #fb973b;
 }
 
 @mixin marker {
+  font-size: inherit;
   font-weight: 700;
   color: $colorMarker;
 }

@@ -2,25 +2,88 @@
   font-family: "ButtonFonts";
   src: url("./fotns/buttonfonts.otf");
 }
+
 @import "./styles/vars.scss";
+
+html {
+  font-size: 16px;
+}
 
 * {
   margin: 0;
   padding: 0;
   font-family: Calibri, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
   @include text;
 }
 
-h1,h2,h3,h4,h5,h6 {
+body {
+  background-color: #FFFFFF;
+}
+
+.wrapper {
+  width: 65%;
+  margin: 1.75rem auto;
+}
+
+h2 {
+  position: relative;
   @include title;
+
+  &::after {
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-color: $colorBorder;
+    z-index: -1;
+  }
+}
+
+h6 {
+  @include text;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 
 span {
   @include marker;
 }
 
-button {
+button, input {
   @include button;
+  cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@import "./styles/header.scss";
+@import "./styles/main_section.scss";
+@import "./styles/aboutus.scss";
+@import "./styles/partners.scss";
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+}

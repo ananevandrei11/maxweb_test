@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  Оставьте нам свой номер, и получите бес
-  <span>dfsdfds</span>
-  <h1>HEy</h1>
-  <button>7 (ххх) ххх хх хх</button>
+  <div class="wrapper">
+    <!--HEADER-->
+    <header id="header" class="header">
+      <figure class="header-logo">
+        <img src="./images/logo.png" alt="logo">
+      </figure>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="">Главная</a></li>
+          <li class="header-nav__item"><a href="">Нам доверяют</a></li>
+          <li class="header-nav__item"><a href="">Фотографии</a></li>
+          <li class="header-nav__item"><a href="">Сертификаты</a></li>
+          <li class="header-nav__item"><a href="">Где нас найти?</a></li>
+        </ul>
+      </nav>
+      <button class="header-nav__menu">☰</button>
+      <button class="header-btn" onclick="return false">
+        <a href="">89152543992</a>
+      </button>
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <!--SECTION #1 TOP__CONTACT-->
+      <section class="main">
+        <article class="main-grid">
+          <h2 class="main-title">У нас вы найдете лучшие светодиодные лампы для животоводства</h2>
+          <h6 class="main-subtitle">
+            Оставьте нам свой номер, и получите
+            <span>бесплатный</span>
+            рассчет специально для вас!
+          </h6>
+          <form action="" method="post">
+            <input type="tel" name="phone" id="phone">
+            <input type="submit" value="submit" onclick="return false">
+          </form>
+        </article>
+        <aside class="main-grid main-img">
+        </aside>
+      </section>
+
+      <!--SECTION #2 MIDDLE__ABOUT US-->
+      <section class="about">
+        <h2 class="about-title">Расскажем вам немного о себе</h2>
+        <h6 class="about-subtitle">
+          Мы ценим ваше время, по этому мы постараемся рассказать о
+          <span>главном вкратце!</span>
+        </h6>
+        <div class="about-info">
+          <aside class="about-grid">
+            <figure class="about-img">
+              <img src="./images/lamp-min.png" alt="cow">
+            </figure>
+          </aside>
+          <article class="about-grid">
+            <P>1</P>
+            <P>Наша компания была основана в 2015 году, название ей «ЭлипсЛед». Занимаемся мы производством светильников
+              для животноводства</P>
+            <P>2</P>
+            <P>Работаем мы исключительно на собственном оборудовании и только с качественным сырьем.</P>
+            <P>3</P>
+            <P>С помощью команды наших специалистов мы смогли добиться одного из самых высоких уровней качества
+              светодиодных светильников для свиноводства, КРС, выращивания грибов!</P>
+          </article>
+        </div>
+      </section>
+
+      <!--SECTION #3 BOTTOM_PARTNERS-->
+      <section class="partners">
+        <aside class="partners-grid">
+          <h2 class="partners-title">Наши партнеры
+            по бизнесу</h2>
+          <h6 class="partners-subtitle">
+            Хотим рассказать вам с кем мы сотрудничаем, и кто нам 
+            <span>доверяет</span>
+          </h6>
+        </aside>
+        <article class="partners-grid">
+          <figure><img src="./images/logo_ostankino-min.png" alt="logo ostankino"></figure>
+          <figure><img src="./images/logo_belogorie-min.png" alt="logo belogorie"></figure>
+          <figure><img src="./images/logo_cosmos-min.png" alt="logo cosmos"></figure>
+          <figure><img src="./images/logo_mirtorg-min.png" alt="logo mirtorg"></figure>
+          <figure><img src="./images/logo_rusagro-min.png" alt="logo rusagro"></figure>
+          <figure><img src="./images/logo_promargo-min.png" alt="logo promargo"></figure>
+        </article>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

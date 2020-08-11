@@ -1,0 +1,36 @@
+.main {
+  margin-top: 6.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 41.063rem));
+  justify-content: center;
+  
+  &-title::after {
+    content: "У нас вы найдете лучшие светодиодные лампы для животоводства";
+  }
+  &-img {
+    position: relative;
+    min-width: 40.688rem;
+    min-height: 32.563rem;
+    border: 1px solid red;
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 53.25rem;
+      height: 35.688rem;
+      top: -10%;
+      left: 0;
+      background: url("./images/cow-min.png") center / contain no-repeat;
+      z-index: 10;
+    }
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 50.875rem;
+      height: 32.563rem;
+      top: 3%;
+      left: -24%;
+      background: url("./images/ligths-min.png") center / contain no-repeat;
+      z-index: 20;
+    }
+  }
+}
