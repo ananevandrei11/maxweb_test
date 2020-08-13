@@ -1,4 +1,9 @@
 import _ from 'lodash';
 import './style.scss';
-// import './images/cow-min.png';
-// import './images/lights-min.png';
+import IMask from 'imask';
+
+var element = document.getElementById('phone');
+var maskOptions = {
+  mask: '+{7} (000) 000 00 00',
+};
+var mask = IMask(element, maskOptions);

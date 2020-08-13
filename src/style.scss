@@ -16,6 +16,7 @@ html {
   font-size: 1.125rem;
   line-height: 1.563rem;
   @include text;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
 h2 {
   position: relative;
   @include title;
-
+  
   &::after {
     position: absolute;
     top: -0.5rem;
@@ -55,6 +56,13 @@ span {
 button, input {
   @include button;
   cursor: pointer;
+  outline: none;
+}
+input {
+  color: $colorTitle;
+  &::placeholder {
+    color: $colorText;
+  }
 }
 
 a {
