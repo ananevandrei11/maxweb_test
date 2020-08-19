@@ -1,6 +1,28 @@
 .partners {
-
+  margin-top: 8.813rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  aside.partners-grid {
+    width: 26.5rem;
+  }
   &-title::after {
     content: "Наши партнеры по бизнесу";
+  }
+
+  &-subtitle {
+    width: 15.375rem;
+    margin-top: 2.125rem;
+  }
+
+  article.partners-grid {
+    width: 45rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 17rem);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 4.375rem;
+    column-gap: 4.375rem;
   }
 }

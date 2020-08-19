@@ -85,61 +85,90 @@ $imgAfterMainWidth: 50.875rem;
 @media (max-width: 1750px) {
   .main {
     &-img {
-      min-width: $imgMainWidth*0.8;
-      height: $imgMainHeight*0.8;
+      min-width: $imgMainWidth*0.85;
+      height: $imgMainHeight*0.85;
       &::after {
         top: 0rem;
-        width: $imgAfterMainWidth*0.8;
-        height: $imgMainHeight*0.8;
+        width: $imgAfterMainWidth*0.85;
+        height: $imgMainHeight*0.85;
       }
     }
   }
 }
 
-@media (max-width: 1620px) {
+@media (max-width: 1650px) {
+  .main {
+    &-img {
+      min-width: $imgMainWidth*0.75;
+      height: $imgMainHeight*0.75;
+      &::after {
+        top: 2.5rem;
+        width: $imgAfterMainWidth*0.75;
+        height: $imgMainHeight*0.75;
+      }
+    }
+  }
+}
+
+@media (max-width: 1560px) {
+  .main {
+    &-img {
+      min-width: $imgMainWidth*0.65;
+      height: $imgMainHeight*0.65;
+      &::after {
+        top: 5rem;
+        width: $imgAfterMainWidth*0.65;
+        height: $imgMainHeight*0.65;
+      }
+    }
+  }
+}
+
+@media (min-width: 1420px) and (max-width: 1490px) {
+  .main {
+    &-img {
+      min-width: $imgMainWidth*0.9;
+      height: $imgMainHeight*0.9;
+      &::after {
+        top: -2.5rem;
+        left: -10rem;
+        width: $imgAfterMainWidth*0.9;
+        height: $imgMainHeight*0.9;
+      }
+    }
+  }
+}
+@media (min-width: 1270px) and (max-width:1420px) {
+  .main {
+    &-img {
+      min-width: $imgMainWidth*0.75;
+      height: $imgMainHeight*0.75;
+      &::after {
+        top: 2.5rem;
+        left: -10rem;
+        width: $imgAfterMainWidth*0.75;
+        height: $imgMainHeight*0.75;
+      }
+    }
+  }
+}
+@media (min-width: 1140px) and (max-width:1270px) {
   .main {
     &-img {
       min-width: $imgMainWidth*0.6;
       height: $imgMainHeight*0.6;
       &::after {
-        top: 2.5rem;
+        top: 5rem;
+        left: -8rem;
         width: $imgAfterMainWidth*0.6;
         height: $imgMainHeight*0.6;
       }
     }
   }
 }
-
-@media (max-width: 1510px) {
-  .main {
-    &-img {
-      min-width: $imgMainWidth*0.5;
-      height: $imgMainHeight*0.5;
-      &::after {
-        top: 5rem;
-        width: $imgAfterMainWidth*0.5;
-        height: $imgMainHeight*0.5;
-      }
-    }
-  }
-}
-
-@media (max-width: 1450px) {
+@media (max-width: 1080px) {
   .main {
     justify-content: center;
-    &-img {
-      min-width: $imgMainWidth*0.8;
-      height: $imgMainHeight*0.8;
-      &::after {
-        left: -10rem;
-        width: $imgAfterMainWidth*0.8;
-        height: $imgMainHeight*0.8;
-      }
-    }
-  }
-}
-@media (max-width: 650px) {
-  .main {
     &-img {
       height: $imgMainHeight*0.4;
       &::after {
