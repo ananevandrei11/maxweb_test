@@ -2,16 +2,20 @@ let btnOpen;
 let btnClose;
 let menu;
 
-btnOpen = document.querySelector('.btn-open');
-btnClose = document.querySelector('.btn-close');
+btnOpen = document.querySelector('.header-nav__open');
+btnClose = document.querySelector('.header-nav__close');
 menu = document.querySelector('.header-nav');
+
+function showBtn() {
+  btnClose.style.visibility = "visible";
+}
+
 btnOpen.onclick = function showMenu() {
   menu.classList.add('open-menu');
-  menu.classList.remove('close-menu');
-  btnClose.classList.add('open-btn');
+  setTimeout(showBtn, 1000);
 };
+
 btnClose.onclick = function closeMenu() {
   menu.classList.remove('open-menu');
-  menu.classList.add('close-menu');
-  btnClose.classList.remove('open-btn');
+  btnClose.style.visibility = "hidden";
 };

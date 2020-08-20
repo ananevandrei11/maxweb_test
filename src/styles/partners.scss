@@ -46,7 +46,15 @@
   .partners {
     justify-content: center;
     flex-wrap: wrap;
-
+    &-title, &-subtitle {
+      text-align: center;
+    }
+     
+    aside.partners-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     article.partners-grid {
       margin-top: 2rem;
     }

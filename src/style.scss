@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  position: relative;
   background-color: #FFFFFF;
 }
 
@@ -67,6 +68,9 @@ input {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration-line: underline;
+  }
 }
 
 ul {

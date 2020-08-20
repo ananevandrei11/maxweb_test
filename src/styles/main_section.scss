@@ -179,3 +179,15 @@ $imgAfterMainWidth: 50.875rem;
     }
   }
 }
+@media (max-width: 480px) {
+  .main {
+    &-title, &-subtitle {
+      text-align: center;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
